@@ -1,0 +1,3 @@
+displayName = Daemon's Reworked Prefixes
+author = daemon
+version = 0.18

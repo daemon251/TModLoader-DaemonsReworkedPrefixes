@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\willb\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\terrariamod\\terrariamod.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\willb\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\terrariamod\\terrariamod.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\willb\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\terrariamod\\terrariamod.csproj",
+        "projectName": "terrariamod",
+        "projectPath": "C:\\Users\\willb\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\terrariamod\\terrariamod.csproj",
+        "packagesPath": "C:\\Users\\willb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\willb\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\terrariamod\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\willb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "tModLoader.CodeAssist": {
+              "target": "Package",
+              "version": "[0.1.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

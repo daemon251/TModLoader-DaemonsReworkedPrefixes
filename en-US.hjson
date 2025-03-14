@@ -1,0 +1,320 @@
+Mods: {
+	daemonReforge: {
+		Prefixes: {
+			Adept: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Adept.AdditionalTooltip
+				DisplayName: Adept
+			}
+
+			Akward: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Akward.AdditionalTooltip
+				DisplayName: Akward
+			}
+
+			Annoying: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Annoying.AdditionalTooltip
+				DisplayName: Annoying
+			}
+
+			Awful: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Awful.AdditionalTooltip
+				DisplayName: Awful
+			}
+
+			Broken: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Broken.AdditionalTooltip
+				DisplayName: Broken
+			}
+
+			Bulky: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Bulky.AdditionalTooltip
+				DisplayName: Bulky
+			}
+
+			Celestial: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Celestial.AdditionalTooltip
+				DisplayName: Celestial
+			}
+
+			Damaged: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Damaged.AdditionalTooltip
+				DisplayName: Damaged
+			}
+
+			Deadly: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Deadly.AdditionalTooltip
+				DisplayName: Deadly
+			}
+
+			Deranged: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Deranged.AdditionalTooltip
+				DisplayName: Deranged
+			}
+
+			Dull: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Dull.AdditionalTooltip
+				DisplayName: Dull
+			}
+
+			Forceful: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Forceful.AdditionalTooltip
+				DisplayName: Forceful
+			}
+
+			Frenzying: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Frenzying.AdditionalTooltip
+				DisplayName: Frenzying
+			}
+
+			Hasty: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Hasty.AdditionalTooltip
+				DisplayName: Hasty
+			}
+
+			Hurtful: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Hurtful.AdditionalTooltip
+				DisplayName: Hurtful
+			}
+
+			Ignorant: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Ignorant.AdditionalTooltip
+				DisplayName: Ignorant
+			}
+
+			Inept: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Inept.AdditionalTooltip
+				DisplayName: Inept
+			}
+
+			Intense: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Intense.AdditionalTooltip
+				DisplayName: Intense
+			}
+
+			Intimidating: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Intimidating.AdditionalTooltip
+				DisplayName: Intimidating
+			}
+
+			Keen: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Keen.AdditionalTooltip
+				DisplayName: Keen
+			}
+
+			Large: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Large.AdditionalTooltip
+				DisplayName: Large
+			}
+
+			Lazy: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Lazy.AdditionalTooltip
+				DisplayName: Lazy
+			}
+
+			Legendary: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Legendary.AdditionalTooltip
+				DisplayName: Legendary
+			}
+
+			Lethargic: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Lethargic.AdditionalTooltip
+				DisplayName: Lethargic
+			}
+
+			Light: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Light.AdditionalTooltip
+				DisplayName: Light
+			}
+
+			Manic: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Manic.AdditionalTooltip
+				DisplayName: Manic
+			}
+
+			Massive: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Massive.AdditionalTooltip
+				DisplayName: Massive
+			}
+
+			Masterful: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Masterful.AdditionalTooltip
+				DisplayName: Masterful
+			}
+
+			Murderous: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Murderous.AdditionalTooltip
+				DisplayName: Murderous
+			}
+
+			Mystic: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Mystic.AdditionalTooltip
+				DisplayName: Mystic
+			}
+
+			Mythical: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Mythical.AdditionalTooltip
+				DisplayName: Mythical
+			}
+
+			Nasty: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Nasty.AdditionalTooltip
+				DisplayName: Nasty
+			}
+
+			Nimble: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Nimble.AdditionalTooltip
+				DisplayName: Nimble
+			}
+
+			Pointy: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Pointy.AdditionalTooltip
+				DisplayName: Pointy
+			}
+
+			Powerful: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Powerful.AdditionalTooltip
+				DisplayName: Powerful
+			}
+
+			Quick: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Quick.AdditionalTooltip
+				DisplayName: Quick
+			}
+
+			Rapid: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Rapid.AdditionalTooltip
+				DisplayName: Rapid
+			}
+
+			Ruthless: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Ruthless.AdditionalTooltip
+				DisplayName: Ruthless
+			}
+
+			Savage: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Savage.AdditionalTooltip
+				DisplayName: Savage
+			}
+
+			Shameful: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Shameful.AdditionalTooltip
+				DisplayName: Shameful
+			}
+
+			Shoddy: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Shoddy.AdditionalTooltip
+				DisplayName: Shoddy
+			}
+
+			Sighted: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Sighted.AdditionalTooltip
+				DisplayName: Sighted
+			}
+
+			Sluggish: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Sluggish.AdditionalTooltip
+				DisplayName: Sluggish
+			}
+
+			Small: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Small.AdditionalTooltip
+				DisplayName: Small
+			}
+
+			Staunch: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Staunch.AdditionalTooltip
+				DisplayName: Staunch
+			}
+
+			Superb: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Superb.AdditionalTooltip
+				DisplayName: Superb
+			}
+
+			Superior: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Superior.AdditionalTooltip
+				DisplayName: Superior
+			}
+
+			Taboo: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Taboo.AdditionalTooltip
+				DisplayName: Taboo
+			}
+
+			Terrible: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Terrible.AdditionalTooltip
+				DisplayName: Terrible
+			}
+
+			Tiny: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Tiny.AdditionalTooltip
+				DisplayName: Tiny
+			}
+
+			Unhappy: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Unhappy.AdditionalTooltip
+				DisplayName: Unhappy
+			}
+
+			Unreal: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Unreal.AdditionalTooltip
+				DisplayName: Unreal
+			}
+
+			Weak: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Weak.AdditionalTooltip
+				DisplayName: Weak
+			}
+
+			Zealous: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Zealous.AdditionalTooltip
+				DisplayName: Zealous
+			}
+
+			Dangerous: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Dangerous.AdditionalTooltip
+				DisplayName: Dangerous
+			}
+
+			Bad: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Bad.AdditionalTooltip
+				DisplayName: Bad
+			}
+
+			Relentless: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Relentless.AdditionalTooltip
+				DisplayName: Relentless
+			}
+
+			Strong: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Strong.AdditionalTooltip
+				DisplayName: Strong
+			}
+
+			Tactical: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Tactical.AdditionalTooltip
+				DisplayName: Tactical
+			}
+
+			Uncaring: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Uncaring.AdditionalTooltip
+				DisplayName: Uncaring
+			}
+
+			Unpleasant: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Unpleasant.AdditionalTooltip
+				DisplayName: Unpleasant
+			}
+
+			Demonic: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Demonic.AdditionalTooltip
+				DisplayName: Demonic
+			}
+
+			Godly: {
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Godly.AdditionalTooltip
+				DisplayName: Godly
+			}
+		}
+	}
+}

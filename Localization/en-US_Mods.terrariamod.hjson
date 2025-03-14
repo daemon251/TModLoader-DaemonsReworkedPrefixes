@@ -1,0 +1,312 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	TutorialSword: {
+		DisplayName: Tutorial Sword
+		Tooltip:
+			'''
+			Template of an item
+			Replacing this tooltip is duty 
+			It's snowing on Mt.Fuji
+			'''
+	}
+}
+
+Prefixes: {
+	PowerTooltip: Mods.terrariamod.Prefixes.PowerTooltip
+
+	ExamplePrefix: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.ExamplePrefix.AdditionalTooltip
+		DisplayName: Example Prefix
+	}
+
+	Dull: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Dull.AdditionalTooltip
+		DisplayName: Dull
+	}
+
+	Keen: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Keen.AdditionalTooltip
+		DisplayName: Keen
+	}
+
+	Dangerous: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Dangerous.AdditionalTooltip
+		DisplayName: Dangerous
+	}
+
+	Ultimate: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Ultimate.AdditionalTooltip
+		DisplayName: Ultimate
+	}
+
+	Strange: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Strange.AdditionalTooltip
+		DisplayName: Strange
+	}
+
+	abcde: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.abcde.AdditionalTooltip
+		DisplayName: abcde
+	}
+
+	Broken: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Broken.AdditionalTooltip
+		DisplayName: Broken
+	}
+
+	Damaged: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Damaged.AdditionalTooltip
+		DisplayName: Damaged
+	}
+
+	Forceful: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Forceful.AdditionalTooltip
+		DisplayName: Forceful
+	}
+
+	Hurtful: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Hurtful.AdditionalTooltip
+		DisplayName: Hurtful
+	}
+
+	Large: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Large.AdditionalTooltip
+		DisplayName: Large
+	}
+
+	Ruthless: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Ruthless.AdditionalTooltip
+		DisplayName: Ruthless
+	}
+
+	Shoddy: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Shoddy.AdditionalTooltip
+		DisplayName: Shoddy
+	}
+
+	Superior: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Superior.AdditionalTooltip
+		DisplayName: Superior
+	}
+
+	Weak: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Weak.AdditionalTooltip
+		DisplayName: Weak
+	}
+
+	Zealous: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Zealous.AdditionalTooltip
+		DisplayName: Zealous
+	}
+
+	Adept: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Adept.AdditionalTooltip
+		DisplayName: Adept
+	}
+
+	Akward: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Akward.AdditionalTooltip
+		DisplayName: Akward
+	}
+
+	Annoying: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Annoying.AdditionalTooltip
+		DisplayName: Annoying
+	}
+
+	Awful: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Awful.AdditionalTooltip
+		DisplayName: Awful
+	}
+
+	Bulky: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Bulky.AdditionalTooltip
+		DisplayName: Bulky
+	}
+
+	Celestial: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Celestial.AdditionalTooltip
+		DisplayName: Celestial
+	}
+
+	Deadly: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Deadly.AdditionalTooltip
+		DisplayName: Deadly
+	}
+
+	Deranged: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Deranged.AdditionalTooltip
+		DisplayName: Deranged
+	}
+
+	Frenzying: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Frenzying.AdditionalTooltip
+		DisplayName: Frenzying
+	}
+
+	Hasty: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Hasty.AdditionalTooltip
+		DisplayName: Hasty
+	}
+
+	Ignorant: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Ignorant.AdditionalTooltip
+		DisplayName: Ignorant
+	}
+
+	Inept: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Inept.AdditionalTooltip
+		DisplayName: Inept
+	}
+
+	Intense: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Intense.AdditionalTooltip
+		DisplayName: Intense
+	}
+
+	Intimidating: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Intimidating.AdditionalTooltip
+		DisplayName: Intimidating
+	}
+
+	Lazy: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Lazy.AdditionalTooltip
+		DisplayName: Lazy
+	}
+
+	Legendary: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Legendary.AdditionalTooltip
+		DisplayName: Legendary
+	}
+
+	Lethargic: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Lethargic.AdditionalTooltip
+		DisplayName: Lethargic
+	}
+
+	Light: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Light.AdditionalTooltip
+		DisplayName: Light
+	}
+
+	Manic: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Manic.AdditionalTooltip
+		DisplayName: Manic
+	}
+
+	Massive: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Massive.AdditionalTooltip
+		DisplayName: Massive
+	}
+
+	Masterful: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Masterful.AdditionalTooltip
+		DisplayName: Masterful
+	}
+
+	Murderous: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Murderous.AdditionalTooltip
+		DisplayName: Murderous
+	}
+
+	Mystic: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Mystic.AdditionalTooltip
+		DisplayName: Mystic
+	}
+
+	Mythical: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Mythical.AdditionalTooltip
+		DisplayName: Mythical
+	}
+
+	Nasty: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Nasty.AdditionalTooltip
+		DisplayName: Nasty
+	}
+
+	Nimble: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Nimble.AdditionalTooltip
+		DisplayName: Nimble
+	}
+
+	Pointy: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Pointy.AdditionalTooltip
+		DisplayName: Pointy
+	}
+
+	Powerful: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Powerful.AdditionalTooltip
+		DisplayName: Powerful
+	}
+
+	Quick: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Quick.AdditionalTooltip
+		DisplayName: Quick
+	}
+
+	Rapid: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Rapid.AdditionalTooltip
+		DisplayName: Rapid
+	}
+
+	Savage: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Savage.AdditionalTooltip
+		DisplayName: Savage
+	}
+
+	Shameful: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Shameful.AdditionalTooltip
+		DisplayName: Shameful
+	}
+
+	Sighted: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Sighted.AdditionalTooltip
+		DisplayName: Sighted
+	}
+
+	Sluggish: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Sluggish.AdditionalTooltip
+		DisplayName: Sluggish
+	}
+
+	Small: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Small.AdditionalTooltip
+		DisplayName: Small
+	}
+
+	Staunch: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Staunch.AdditionalTooltip
+		DisplayName: Staunch
+	}
+
+	Superb: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Superb.AdditionalTooltip
+		DisplayName: Superb
+	}
+
+	Taboo: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Taboo.AdditionalTooltip
+		DisplayName: Taboo
+	}
+
+	Terrible: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Terrible.AdditionalTooltip
+		DisplayName: Terrible
+	}
+
+	Tiny: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Tiny.AdditionalTooltip
+		DisplayName: Tiny
+	}
+
+	Unhappy: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Unhappy.AdditionalTooltip
+		DisplayName: Unhappy
+	}
+
+	Unreal: {
+		AdditionalTooltip: Mods.terrariamod.Prefixes.Unreal.AdditionalTooltip
+		DisplayName: Unreal
+	}
+}
