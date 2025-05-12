@@ -10,13 +10,13 @@ using daemonReforge.Content.weaponPrefixes;
 
 namespace daemonReforge.Content.accessoryPrefixes
 { 
-	public class aaa : Projectile
+	/*public class aaa : Projectile
 	{
 		public void func()
 		{
 			//Main.NewText(minionSlots);
 		}
-	}
+	}*/
 	
 	public class daemonReforgeModPlayer : ModPlayer
 	{
@@ -69,22 +69,21 @@ namespace daemonReforge.Content.accessoryPrefixes
 		{
 			int critIncrease = 0;
 			
-			if (item.prefix == PrefixID.Wild) {player.GetModPlayer<daemonReforgeModPlayer>().multMeleeSpeed += 0.02f;}
-			else if (item.prefix == PrefixID.Rash) {player.GetModPlayer<daemonReforgeModPlayer>().multMeleeSpeed += 0.04f;}
-			else if (item.prefix == PrefixID.Intrepid) {player.GetModPlayer<daemonReforgeModPlayer>().multMeleeSpeed += 0.06f;}
-			else if (item.prefix == PrefixID.Violent) {player.GetModPlayer<daemonReforgeModPlayer>().multMeleeSpeed += 0.08f;}
+			if (item.prefix == PrefixID.Wild) {player.GetModPlayer<daemonReforgeModPlayer>().multMeleeSpeed += 0.01f;}
+			else if (item.prefix == PrefixID.Rash) {player.GetModPlayer<daemonReforgeModPlayer>().multMeleeSpeed += 0.02f;}
+			else if (item.prefix == PrefixID.Intrepid) {player.GetModPlayer<daemonReforgeModPlayer>().multMeleeSpeed += 0.03f;}
+			else if (item.prefix == PrefixID.Violent) {player.GetModPlayer<daemonReforgeModPlayer>().multMeleeSpeed += 0.04f;}
 			else if (item.prefix == PrefixID.Brisk) {player.GetModPlayer<daemonReforgeModPlayer>().multMoveSpeed += 0.02f;}
 			else if (item.prefix == PrefixID.Fleeting) {player.GetModPlayer<daemonReforgeModPlayer>().multMoveSpeed += 0.04f;}
 			else if (item.prefix == PrefixID.Hasty2) {player.GetModPlayer<daemonReforgeModPlayer>().multMoveSpeed += 0.06f;}
 			else if (item.prefix == PrefixID.Quick2) {player.GetModPlayer<daemonReforgeModPlayer>().multMoveSpeed += 0.08f;}
-			else if (item.prefix == PrefixID.Jagged) {player.GetModPlayer<daemonReforgeModPlayer>().multDamage += 0.015f;}
-			else if (item.prefix == PrefixID.Spiked) {player.GetModPlayer<daemonReforgeModPlayer>().multDamage += 0.03f;}
-			else if (item.prefix == PrefixID.Angry) {player.GetModPlayer<daemonReforgeModPlayer>().multDamage += 0.045f;}
-			else if (item.prefix == PrefixID.Menacing) {player.GetModPlayer<daemonReforgeModPlayer>().multDamage += 0.06f;}
-			
-			else if (item.prefix == PrefixID.Precise) {critIncrease = 4;}
-			else if (item.prefix == PrefixID.Lucky) {critIncrease = 8;}
-			else if (item.prefix == PrefixID.Arcane) {player.GetModPlayer<daemonReforgeModPlayer>().multManaCost += -0.12f;}
+			else if (item.prefix == PrefixID.Jagged) {player.GetModPlayer<daemonReforgeModPlayer>().multDamage += 0.01f;}
+			else if (item.prefix == PrefixID.Spiked) {player.GetModPlayer<daemonReforgeModPlayer>().multDamage += 0.02f;}
+			else if (item.prefix == PrefixID.Angry) {player.GetModPlayer<daemonReforgeModPlayer>().multDamage += 0.03f;}
+			else if (item.prefix == PrefixID.Menacing) {player.GetModPlayer<daemonReforgeModPlayer>().multDamage += 0.04f;}
+			else if (item.prefix == PrefixID.Precise) {critIncrease = 2;}
+			else if (item.prefix == PrefixID.Lucky) {critIncrease = 4;}
+			else if (item.prefix == PrefixID.Arcane) {player.GetModPlayer<daemonReforgeModPlayer>().multManaCost += -0.4f;}
 			else {orig(player, item);}
 			
 			if (critIncrease != 0) 
@@ -93,53 +92,52 @@ namespace daemonReforge.Content.accessoryPrefixes
 			}
 		}
 			
+			
 		public override void ModifyTooltips(Item item, List<TooltipLine> tooltips) 
 		{
-            string bonus = "0";
+      string bonus = "0";
 			
-			if (item.prefix == PrefixID.Wild) {bonus = "2";}
-			else if (item.prefix == PrefixID.Rash) {bonus = "4";}
-			else if (item.prefix == PrefixID.Intrepid) {bonus = "6";}
-			else if (item.prefix == PrefixID.Violent) {bonus = "8";}
+			if (item.prefix == PrefixID.Wild) {bonus = "1";}
+			else if (item.prefix == PrefixID.Rash) {bonus = "2";}
+			else if (item.prefix == PrefixID.Intrepid) {bonus = "3";}
+			else if (item.prefix == PrefixID.Violent) {bonus = "4";}
 			else if (item.prefix == PrefixID.Brisk) {bonus = "2";}
 			else if (item.prefix == PrefixID.Fleeting) {bonus = "4";}
 			else if (item.prefix == PrefixID.Hasty2) {bonus = "6";} 
 			else if (item.prefix == PrefixID.Quick2) {bonus = "8";} 
-			else if (item.prefix == PrefixID.Jagged) {bonus = "1.5";}
-			else if (item.prefix == PrefixID.Spiked) {bonus = "3";}
-			else if (item.prefix == PrefixID.Angry) {bonus = "4.5";}
-			else if (item.prefix == PrefixID.Menacing) {bonus = "6";}
-			else if (item.prefix == PrefixID.Precise) {bonus = "4";}
-			else if (item.prefix == PrefixID.Lucky) {bonus = "8";}
-			else if (item.prefix == PrefixID.Arcane) {bonus = "12";}
+			else if (item.prefix == PrefixID.Jagged) {bonus = "1";}
+			else if (item.prefix == PrefixID.Spiked) {bonus = "2";}
+			else if (item.prefix == PrefixID.Angry) {bonus = "3";}
+			else if (item.prefix == PrefixID.Menacing) {bonus = "4";}
+			else if (item.prefix == PrefixID.Precise) {bonus = "2";}
+			else if (item.prefix == PrefixID.Lucky) {bonus = "4";}
+			else if (item.prefix == PrefixID.Arcane) {bonus = "4";}
 			
 			foreach (var line in tooltips) 
 			{
-                if (line.Name == "PrefixAccMeleeSpeed") 
+        if (line.Name == "PrefixAccMeleeSpeed") 
 				{
-                    //line.Text = "+" + bonus + Language.GetText("LegacyTooltip.40"); //WORKS... 47 is melee speed BUUUT NOT PRECISE LANGUAGE
 					line.Text = "+" + bonus + "% Weapon Speed";
-                }
+        }
 				if (line.Name == "PrefixAccDamage") 
 				{
-                    //line.Text = "+" + bonus + Language.GetText("LegacyTooltip.39"); //WORKS BUUUT NOT PRECISE LANGUAGE
 					line.Text = "+" + bonus + "% Final Damage";
-                }
+        }
 				if (line.Name == "PrefixAccCritChance") 
 				{
-                    line.Text = "+" + bonus + Language.GetText("LegacyTooltip.41"); //WORKS
-                }
+          line.Text = "+" + bonus + Language.GetText("LegacyTooltip.41"); //WORKS
+        }
 				if (line.Name == "PrefixAccMoveSpeed") 
 				{
-                    line.Text = "+" + bonus + Language.GetText("LegacyTooltip.46"); //WORKS
-                }
+          line.Text = "+" + bonus + Language.GetText("LegacyTooltip.46"); //WORKS
+        }
 				if (line.Name == "PrefixAccMaxMana") 
 				{
-                    line.Text = "-" + bonus + "% Mana Cost";  
-                }
-				
-            }
+          line.Text = "-" + bonus + "% Mana Cost";  
         }
+				
+      }
+    }
 		
 	}
 }

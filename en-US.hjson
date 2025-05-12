@@ -315,6 +315,12 @@ Mods: {
 				AdditionalTooltip: Mods.daemonReforge.Prefixes.Godly.AdditionalTooltip
 				DisplayName: Godly
 			}
+
+			Godly2: {
+				"Godly Spear Edition": Mods.daemonReforge.Prefixes.Godly2.Godly Spear Edition
+				DisplayName: Godly2
+				AdditionalTooltip: Mods.daemonReforge.Prefixes.Godly2.AdditionalTooltip
+			}
 		}
 	}
 }
