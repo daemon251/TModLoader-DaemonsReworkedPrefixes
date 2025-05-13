@@ -417,10 +417,28 @@ namespace daemonReforge.Content.weaponPrefixes
 //**** COMMON ****
 //****************
 	
-	public class Godly : ModPrefix
-	{
-		public override PrefixCategory Category => PrefixCategory.AnyWeapon;
 
+  /*
+    Spears and YoYo's have special effects that allow them to function with speed modifications
+
+    Spears will have their shoot speeds modified by the inverse percentage of the speed % in order to keep range consistent
+      -Range will not be 100% perserved because of integer rounding however, so speed increases will slightly increase range and decreases will slightly decrease
+
+    YoYo's will have their extension speeds modified by the speed %
+      -Effect is multiplied because otherwise it is practically unnoticeable 
+      -YoYo's use time is reset to 25, as all yoyo's use this value and changing it may be risky
+  */
+
+  //wish i could just do #DEFINE YOYO_RATIO 3f but C# is dumb
+  public static class YOYO_RATIO
+  {
+    public const float r = 3f;
+  }
+
+	public class Godly : ModPrefix
+	{  
+		public override PrefixCategory Category => PrefixCategory.AnyWeapon;
+  
 		public override float RollChance(Item item) 
 		{
 			return 0.2f;
@@ -432,12 +450,24 @@ namespace daemonReforge.Content.weaponPrefixes
 			return true;
 		}
 
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/0.9f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (-0.1f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.08f;
 			critBonus += 4;
 			knockbackMult *= 1f + 0.00f;
-			useTimeMult *= 1.00f - 0.10f;
+      useTimeMult *= 1.00f - 0.10f;
 		}
 
 		public override void ModifyValue(ref float valueMult) 
@@ -467,6 +497,19 @@ namespace daemonReforge.Content.weaponPrefixes
 			if (item.CountsAsClass(DamageClass.Summon)) {return false;}
 			return true;
 		}
+
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/0.70f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (-0.3f * YOYO_RATIO.r);
+      }
+    }
 
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
@@ -504,6 +547,18 @@ namespace daemonReforge.Content.weaponPrefixes
 			return true;
 		}
 
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/0.72f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (-0.28f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.00f;
@@ -539,6 +594,19 @@ namespace daemonReforge.Content.weaponPrefixes
 			if (item.CountsAsClass(DamageClass.Summon)) {return false;}
 			return true;
 		}
+
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/0.82f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (-0.18f * YOYO_RATIO.r);
+      }
+    }
 
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
@@ -576,6 +644,18 @@ namespace daemonReforge.Content.weaponPrefixes
 			return true;
 		}
 
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/1.35f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (0.35f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.00f;
@@ -612,6 +692,18 @@ namespace daemonReforge.Content.weaponPrefixes
 			return true;
 		}
 
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/1.4f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (0.4f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.40f;
@@ -648,6 +740,18 @@ namespace daemonReforge.Content.weaponPrefixes
 			return true;
 		}
 
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/1.2f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (0.2f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.00f;
@@ -683,7 +787,18 @@ namespace daemonReforge.Content.weaponPrefixes
 			if (item.CountsAsClass(DamageClass.Summon)) {return false;}
 			return true;
 		}
-
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/1.15f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (0.15f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.00f;
@@ -719,7 +834,18 @@ namespace daemonReforge.Content.weaponPrefixes
 			if (item.CountsAsClass(DamageClass.Summon)) {return false;}
 			return true;
 		}
-
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/1.1f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (0.1f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + -0.10f;
@@ -740,14 +866,15 @@ namespace daemonReforge.Content.weaponPrefixes
 			_ = AdditionalTooltip;
 		}
 	}
-	
+
+  
 //***************
 //**** MELEE ****
 //***************
 	
 	public class Legendary : ModPrefix
 	{
-		public override PrefixCategory Category => PrefixCategory.AnyWeapon;
+		public override PrefixCategory Category => PrefixCategory.Melee;
 
 		public override float RollChance(Item item) 
 		{
@@ -796,6 +923,18 @@ namespace daemonReforge.Content.weaponPrefixes
 			return true;
 		}
 
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/1.4f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (0.4f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.30f;
@@ -831,7 +970,19 @@ namespace daemonReforge.Content.weaponPrefixes
 		{
 			return true;
 		}
-
+    
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/1.1f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (0.1f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.00f;
@@ -868,6 +1019,7 @@ namespace daemonReforge.Content.weaponPrefixes
 			return true;
 		}
 
+
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.00f;
@@ -903,7 +1055,19 @@ namespace daemonReforge.Content.weaponPrefixes
 		{
 			return true;
 		}
-
+    
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/1.3f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (0.3f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.05f;
@@ -939,6 +1103,18 @@ namespace daemonReforge.Content.weaponPrefixes
 			return true;
 		}
 
+    public override void Apply(Item item)
+    {
+      if(ItemID.Sets.Spears[item.type])
+      {
+        item.shootSpeed *= 1f/0.7f;
+      }
+      else if(ItemID.Sets.Yoyo[item.type])
+      {
+        item.useTime = 25;
+        item.shootSpeed *= 1f - (-0.3f * YOYO_RATIO.r);
+      }
+    }
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus) 
 		{
 			damageMult *= 1f + 0.00f;
